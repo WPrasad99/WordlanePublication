@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Lane Publication - Turn Your Story Into A Published Book</title>
+
+<link rel="icon" type="image/png" href="images/logo.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="images/logo.png" />
+<link rel="shortcut icon" href="images/logo.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/logo.png" />
+<link rel="manifest" href="images/logo.png" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Enhanced Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <!-- Animated Background Particles -->
+            <div class="particles-container">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        
+            <!-- Enhanced Animated Text -->
+            <div class="loading-text-container">
+                <h1 class="loading-text" id="loading-text">
+                    <span class="word" data-text="Taking">
+                        <span class="letter">T</span>
+                        <span class="letter">a</span>
+                        <span class="letter">k</span>
+                        <span class="letter">i</span>
+                        <span class="letter">n</span>
+                        <span class="letter">g</span>
+                    </span>
+                    <span class="word" data-text="stories">
+                        <span class="letter">s</span>
+                        <span class="letter">t</span>
+                        <span class="letter">o</span>
+                        <span class="letter">r</span>
+                        <span class="letter">i</span>
+                        <span class="letter">e</span>
+                        <span class="letter">s</span>
+                    </span>
+                    <span class="word" data-text="beyond">
+                        <span class="letter">b</span>
+                        <span class="letter">e</span>
+                        <span class="letter">y</span>
+                        <span class="letter">o</span>
+                        <span class="letter">n</span>
+                        <span class="letter">d</span>
+                    </span>
+                    <span class="word" data-text="your">
+                        <span class="letter">y</span>
+                        <span class="letter">o</span>
+                        <span class="letter">u</span>
+                        <span class="letter">r</span>
+                    </span>
+                    <span class="word" data-text="limit">
+                        <span class="letter">l</span>
+                        <span class="letter">i</span>
+                        <span class="letter">m</span>
+                        <span class="letter">i</span>
+                        <span class="letter">t</span>
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-website" class="main-website">
+        <!-- Enhanced Responsive Header -->
+        <header class="header">
+            <div class="header-container">
+                <!-- Logo and Company Info -->
+                <div class="logo-section">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Word Lane Publication Logo">
+                    </div>
+                    <div class="company-info">
+                        <h1 class="company-name">WORD LANE PUBLICATION</h1>
+                        <p class="company-subtitle">Word Lane Publication Pvt.Ltd.</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="navigation">
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#process" class="nav-link">Process</a>
+                    <a href="#book" class="nav-link">Books</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="cart-icon">
+                        <a href="form.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="8" cy="21" r="1"></circle>
+                            <circle cx="19" cy="21" r="1"></circle>
+                            <path d="m2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                        </svg></a>
+                    </div>
+                </nav>
+
+                <!-- Enhanced Hamburger Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay" id="mobileNavOverlay">
+            <div class="mobile-nav-content">
+                <div class="mobile-nav-links">
+                    <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About Us</a>
+                    <a href="#process" class="mobile-nav-link" onclick="closeMobileMenu()">Process</a>
+                      <a href="#book" class="mobile-nav-link" onclick="closeMobileMenu()">Books</a>
+                    <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+                </div>
+                <div class="mobile-cart-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="8" cy="21" r="1"></circle>
+                        <circle cx="19" cy="21" r="1"></circle>
+                        <path d="m2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-container">
+                <!-- Left Content -->
+                <div class="text-content">
+                    <div class="heading-section">
+                        <h2 class="main-heading">
+                            TURN YOUR STORY INTO<br>
+                            A PUBLISHED BOOK
+                        </h2>
+                        <p class="subheading">PROFESSIONAL PUBLISHING SERVICES FOR ASPIRING AUTHORS</p>
+                    </div>
+                    <a href="publishform.html"><button class="cta-button" onclick="handleStartPublishing()">
+                        START PUBLISHING
+                    </button></a>
+                </div>
+
+                <!-- Right Content - Enhanced Book Images with Floating Animations and Shadows -->
+                <div class="books-section">
+                    <div class="books-container-hero">
+                        <div class="book book-1">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/book%205%20%281%29-5JMhZ96vgiMKWSEYmIbiDm6TTesisB.png" alt="A Beautiful Moment book cover">
+                        </div>
+                        <div class="book book-2">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/book%205-BMFuGatO0sr4OtEBszyk43SnAb7JFo.png" alt="A Journey Through Life's Lessons book cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- About Section with Enhanced Read More -->
+        <section class="about-hero-section" id="about">
+            <div class="about-content-wrapper">
+                <div class="about-grid">
+                    <!-- Left Content -->
+                    <div class="about-left-content">
+                        <h1 class="about-main-title">
+                            Taking stories <em class="about-highlight">beyond</em> your limit
+                        </h1>
+                                                
+                        <div class="about-section-content">
+                            <h2 class="about-title">About Us</h2>
+                            <p class="about-text">
+                                We are working in this field since 2019.                                 
+                                Worldlane Publication is a leading publication house dedicated to                                 
+                                producing high-quality books and articles in English and Hindi and other                                 
+                                many languages as well as.
+                            </p>
+                            
+                            <!-- Expandable Content -->
+                            <div class="about-expanded-content" id="expandedContent">
+                                <p class="expanded-text">
+                                    Our journey began with a simple vision: to bridge the gap between talented writers and readers worldwide. Over the years, we have successfully published over 500 books across various genres including fiction, non-fiction, poetry, academic texts, and children's literature.
+                                </p>
+                                <p class="expanded-text">
+                                    We pride ourselves on our comprehensive publishing services that include manuscript evaluation, professional editing, cover design, marketing, and distribution across multiple platforms. Our team consists of experienced editors, designers, and marketing professionals who are passionate about bringing stories to life.
+                                </p>
+                                
+                                <!-- Company Statistics -->
+                                <div class="company-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">500+</span>
+                                        <span class="stat-label">Books Published</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">200+</span>
+                                        <span class="stat-label">Happy Authors</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">15+</span>
+                                        <span class="stat-label">Languages</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">5</span>
+                                        <span class="stat-label">Years Experience</span>
+                                    </div>
+                                </div>
+                                
+                                <p class="expanded-text">
+                                    What sets us apart is our commitment to quality and our personalized approach to each project. We believe every story deserves to be told beautifully, and we work closely with our authors to ensure their vision comes to life exactly as they imagined.
+                                </p>
+                            </div>
+                            
+                            <button class="more-button" id="moreBtn">
+                                <span class="arrow">→</span>
+                                <span class="button-text">READ MORE</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Right Content - Character Illustration -->
+                    <div class="about-right-content">
+                        <img src="images/Rectangle 57.png" alt="About Us Illustration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Carousel Section with New Images -->
+        <section id="book" class="book-carousel-section">
+            <div class="carousel-wrapper">
+                <!-- Search Bar -->
+                <div class="search-container">
+                  <a href="form.html"> <input type="text" class="search-input" id="searchInput" placeholder="Search books..." oninput="searchBooks()">
+                    <i class="fas fa-search search-icon"></i></a> 
+                </div>
+
+                <!-- Book Carousel -->
+                <div class="carousel-container">
+                    <!-- Left Arrow -->
+                    <button class="nav-arrow left-arrow" onclick="prevSlide()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <!-- Books Display -->
+                    <div class="books-container">
+                        <div class="books-track" id="booksTrack">
+                            <!-- Book 1 -->
+                            <div class="book-item" data-book-id="0">
+                                <div class="book-cover">
+                                    <div class="check-mark">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bbok%206-VzisHWZmZIk6S8bngFFfHCf5cAmPK7.png" alt="Toxic Parenting" class="book-image">
+                                </div>
+                                <div class="book-info">
+                                    <h4>TOXIC PARENTING</h4>
+                                    <div class="rating">
+                                        <span>★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 2 -->
+                            <div class="book-item" data-book-id="1">
+                                <div class="book-cover">
+                                    <div class="check-mark">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/book%205-BMFuGatO0sr4OtEBszyk43SnAb7JFo.png" alt="A Journey Through Life's Lessons" class="book-image">
+                                </div>
+                                <div class="book-info">
+                                    <h4>A JOURNEY THROUGH LIFE'S LESSONS</h4>
+                                    <div class="rating">
+                                        <span>★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 3 -->
+                            <div class="book-item" data-book-id="2">
+                                <div class="book-cover">
+                                    <div class="check-mark">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/BOKKKKK-gB9I24YL343iCeBO3LIkML8vcClItw.png" alt="The Shattering" class="book-image">
+                                </div>
+                                <div class="book-info">
+                                    <h4>THE SHATTERING</h4>
+                                    <div class="rating">
+                                        <span>★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 4 -->
+                            <div class="book-item" data-book-id="3">
+                                <div class="book-cover">
+                                    <div class="check-mark">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-16%20at%2012.12.25_68afe91a-JHAw2W8Ihm6AjhTbnik84Ql5kOQpm9.png" alt="Shattered Sonnets" class="book-image">
+                                </div>
+                                <div class="book-info">
+                                    <h4>SHATTERED SONNETS</h4>
+                                    <div class="rating">
+                                        <span>★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 5 -->
+                            <div class="book-item" data-book-id="4">
+                                <div class="book-cover">
+                                    <div class="check-mark">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/book%205%20%281%29-5JMhZ96vgiMKWSEYmIbiDm6TTesisB.png" alt="A Beautiful Moment" class="book-image">
+                                </div>
+                                <div class="book-info">
+                                    <h4>A BEAUTIFUL MOMENT</h4>
+                                    <div class="rating">
+                                        <span>★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 6 -->
+                            <div class="book-item" data-book-id="5">
+                                <div class="book-cover">
+                                    <div class="check-mark">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%20101-n963i7I7aUg3YQDgGSZGonVVwpGKVk.png" alt="Light House Research Articles" class="book-image">
+                                </div>
+                                <div class="book-info">
+                                    <h4>LIGHT HOUSE RESEARCH ARTICLES</h4>
+                                    <div class="rating">
+                                        <span>★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Arrow -->
+                    <button class="nav-arrow right-arrow" onclick="nextSlide()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section" id="process">
+            <div class="process-content">
+                <!-- Main heading -->
+                <h1 class="process-main-heading">OUR PUBLICATION PROCESS</h1>
+
+                <!-- Process steps grid -->
+                <div class="process-grid">
+                    <!-- Top row - 3 cards -->
+                    <div class="process-card" data-step="manuscript">
+                        <h2 class="card-title">
+                            MANUSCRIPT<br>REVIEW
+                        </h2>
+                        <div class="icon-circle">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m18 2 4 4-14 14H4v-4L18 2z"/>
+                                <path d="m14.5 5.5 4 4"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="process-card" data-step="editing">
+                        <h2 class="card-title">EDITING</h2>
+                        <div class="icon-circle">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                <path d="m18.5 2.5 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="process-card" data-step="design">
+                        <h2 class="card-title">DESIGN</h2>
+                        <div class="icon-circle">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m14.622 17.897-10.68-2.913"/>
+                                <path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.5 2.5 0 0 1 0 3.536L15.5 17.634a.5.5 0 0 1-.707 0l-.944-.944a.5.5 0 0 0-.707 0l-4.019 4.019a1 1 0 0 1-3.002-3.002L10.139 13.7a.5.5 0 0 0 0-.707l-.944-.944a2.5 2.5 0 0 1 0-3.536L12 5.707a.5.5 0 0 1 .707 0l.944.944a.5.5 0 0 0 .707 0L18.376 2.622Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom row - 2 cards centered -->
+                <div class="process-grid-bottom">
+                    <div class="process-card" data-step="publication">
+                        <h2 class="card-title">PUBLICATION</h2>
+                        <div class="icon-circle">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"/>
+                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"/>
+                                <line x1="6" x2="6" y1="6" y2="6.01"/>
+                                <line x1="6" x2="6" y1="18" y2="18.01"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="process-card" data-step="marketing">
+                        <h2 class="card-title">
+                            DIGITAL<br>MARKETING
+                        </h2>
+                        <div class="icon-circle">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second main heading -->
+                <h2 class="secondary-heading">
+                    SELL YOUR BOOKS TO THE LARGEST AUDIENCE BASE
+                </h2>
+
+                <!-- Platform logos -->
+                <div class="platforms">
+                    <!-- Amazon -->
+                    <div class="platform amazon">
+                      <img src="images/amazon.svg" alt="Amazon">
+                    </div>
+
+                    <!-- Flipkart -->
+                    <div class="platform flipkart">
+                        <img src="images/flipkart.svg" alt="Flipkart">
+                    </div>
+
+                    <!-- Google Play Books -->
+                    <div class="platform google-play">
+                        <img src="images/google_books.svg" alt="Google Books">
+                    </div>
+
+                    <!-- Kindle -->
+                    <div class="platform kindle">
+                        <img src="images/kindle.svg" alt="Kindle">
+                    </div>
+
+                    <!-- Kobo -->
+                    <div class="platform kobo">
+                       <img src="images/kobo.svg" alt="Kobo">
+                    </div>
+                </div>
+            <!-- Floating Info Card -->
+            <div class="info-tooltip" id="infoTooltip">
+                <div class="info-content">
+                    <div class="info-header">
+                        <h3 class="info-title"></h3>
+                        <div class="info-icon">
+                            <svg class="tooltip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="m9 12 2 2 4-4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="info-description"></p>
+                    <div class="info-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hover Card Modal -->
+        <div class="hover-card" id="hoverCard">
+            <div class="hover-card-content">
+                <div class="hover-book-cover">
+                    <img id="hoverBookImage" src="/placeholder.svg" alt="">
+                </div>
+                <div class="hover-book-details">
+                    <h2 id="hoverBookTitle"></h2>
+                    <p id="hoverBookAuthor"></p>
+                    <p id="hoverBookDescription"></p>
+                    <div class="hover-actions">
+                        <button class="price-btn" id="priceBtn">₹110</button>
+                        <button class="buy-now-btn" onclick="buyNow()">
+                            Buy Now
+                        </button>
+                        <button class="amazon-btn" onclick="buyOnAmazon()">
+                            <i class="fab fa-amazon"></i> Amazon
+                        </button>
+                        <button class="share-btn" onclick="shareBook()">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer-section" id="contact">
+            <!-- Curved background elements -->
+            <div class="curve-bg-1"></div>
+            <div class="curve-bg-2"></div>
+            
+            <!-- Top section with call-to-action -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="cta-section">
+                        <h2 class="cta-title">READY TO PUBLISH YOUR BOOK</h2>
+                        <p class="cta-subtitle">SCHEDULE A CONSULTATION CALL WITH OUR PUBLISHING EXPERT</p>
+                        
+                        <div class="cta-buttons">
+                            <a href="tel:+918677975162" class="contact-email"><button class="btn-primary" onclick="contactExpert()">
+                                CONTACT WITH OUR<br>PUBLISHING EXPERT
+                            </button></a>
+                            <a href="publishform.html" style="text-decoration: none;"><button class="btn-secondary" onclick="publishYourself()">
+                                PUBLISH BOOK YOURSELF
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom section with links and contact info -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-content">
+                        <!-- Company Info -->
+                        <div class="footer-column">
+                            <h3 class="footer-heading">WORDLANE</h3>
+                            <p class="company-tagline">PROFESSIONAL BOOK<br>PUBLISHING SERVICES</p>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="footer-column">
+                            <h3 class="footer-heading">QUICK LINKS</h3>
+                            <ul class="footer-links">
+                                <li><a href="#about" onclick="navigateTo('about')">ABOUT US</a></li>
+                                <li><a href="#process" onclick="navigateTo('process')">OUR PROCESS</a></li>
+                                <li><a href="#books" onclick="navigateTo('books')">OUR BOOKS</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="footer-column">
+                            <h3 class="footer-heading">CONTACT</h3>
+                            <div class="contact-info">
+                                <a href="mailto:wordlanepublication@gmail.com" class="contact-email">
+                                    wordlanepublication@gmail.com
+                                </a>
+                                <a href="tel:+918677975162" class="contact-phone">
+                                    +91 86779 75162
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="footer-column">
+                            <h3 class="footer-heading">SOCIAL HANDLES</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon instagram" onclick="openSocial('instagram')" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-icon linkedin" onclick="openSocial('linkedin')" aria-label="linkedin">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.037-1.85-3.037-1.853 0-2.136 1.445-2.136 2.94v5.666H9.353V9h3.414v1.561h.049c.476-.899 1.637-1.85 3.369-1.85 3.599 0 4.263 2.368 4.263 5.451v6.29zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.964 20.452H3.713V9h3.251v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/@Wordlanepublication"  class="social-icon youtube" onclick="openSocial('youtube.com')" aria-label="Youtube">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"> 
+                                        <path d="M23.498 6.186a2.935 2.935 0 0 0-2.062-2.075C19.626 3.5 12 3.5 12 3.5s-7.626 0-9.436.611A2.935 2.935 0 0 0 .502 6.186 30.356 30.356 0 0 0 0 12a30.356 30.356 0 0 0 .502 5.814 2.935 2.935 0 0 0 2.062 2.075C4.374 20.5 12 20.5 12 20.5s7.626 0 9.436-.611a2.935 2.935 0 0 0 2.062-2.075A30.356 30.356 0 0 0 24 12a30.356 30.356 0 0 0-.502-5.814zM9.75 15.022V8.978L15.545 12 9.75 15.022z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright section -->
+            <div class="footer-copyright">
+                <div class="container">
+                    <p class="powered-by">Powered by Word Lane Tech</p>
+                    <p class="copyright">© copyright Word Lane Publication Pvt. Ltd. All right Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+ </body>
+</html>

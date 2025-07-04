@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+<link rel="icon" type="image/png" href="images/logo.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="images/logo.png" />
+<link rel="shortcut icon" href="images/logo.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="images/logo.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+            <img src="images/search-icon-2048x2048-cmujl7en 3.png" alt="Search" class="search-icon">
+        </div>
+
+        <!-- Books Grid -->
+        <div class="books-grid" id="booksGrid">
+            <!-- Top Row Books -->
+            <div class="book-card" data-title="TOXIC PARENTING" data-price="₹199">
+                <img src="images/bbok 6.png" alt="Toxic Parenting" class="book-image">
+                <h3 class="book-title">TOXIC PARENTING</h3>
+                <p class="book-price">₹199</p>
+                <button class="buy-btn" onclick="buyNow('TOXIC PARENTING', '₹199')">BUY NOW</button>
+            </div>
+
+            <div class="book-card" data-title="A JOURNEY THROUGH LIFE'S LESSON" data-price="₹229">
+                <img src="images/book 5.png" alt="A Journey Through Life's Lesson" class="book-image">
+                <h3 class="book-title">A JOURNEY THROUGH<br>LIFE'S LESSON</h3>
+                <p class="book-price">₹229</p>
+                <button class="buy-btn" onclick="buyNow('A JOURNEY THROUGH LIFE\'S LESSON', '₹229')">BUY NOW</button>
+            </div>
+
+            <div class="book-card" data-title="THE SHATTERING" data-price="₹120">
+                <img src="images/bokkkkk.png" alt="The Shattering" class="book-image">
+                <h3 class="book-title">THE SHATTERING</h3>
+                <p class="book-price">₹120</p>
+                <button class="buy-btn" onclick="buyNow('THE SHATTERING', '₹120')">BUY NOW</button>
+            </div>
+
+            <!-- Bottom Row Books -->
+            <div class="book-card" data-title="A BEAUTIFUL MOMENT" data-price="₹110">
+                <img src="images/book 5 (1).png" alt="A Beautiful Moment" class="book-image">
+                <h3 class="book-title">A BEAUTIFUL MOMENT</h3>
+                <p class="book-price">₹110</p>
+                <button class="buy-btn" onclick="buyNow('A BEAUTIFUL MOMENT', '₹110')">BUY NOW</button>
+            </div>
+
+            <div class="book-card" data-title="SHATTERED SONNETS" data-price="₹139">
+                <img src="images/WhatsApp Image 2025-06-16 at 12.12.25_68afe91a.png" alt="Shattered Sonnets" class="book-image">
+                <h3 class="book-title">SHATTERED SONNETS</h3>
+                <p class="book-price">₹139</p>
+                <button class="buy-btn" onclick="buyNow('SHATTERED SONNETS', '₹139')">BUY NOW</button>
+            </div>
+
+            <div class="book-card" data-title="LIGHT HOUSE: A COLLECTION OF RESEARCH ARTICLES" data-price="₹230">
+                <img src="images/Rectangle 101.png" alt="Light House" class="book-image">
+                <h3 class="book-title">LIGHT HOUSE</h3>
+                <p class="book-price">₹230</p>
+                <button class="buy-btn" onclick="buyNow('LIGHT HOUSE: A COLLECTION OF RESEARCH ARTICLES', '₹230')">BUY NOW</button>
+            </div>
+        </div>
+
+        <!-- Order Form Section -->
+        <div class="form-section" id="formSection">
+            <div class="form-container">
+                <h2>Order Form</h2>
+                <form id="orderForm" action="https://formspree.io/f/xkgbeany" method="post" submit="submitOrder(event)">
+                    <div class="form-group">
+                        <label for="customerName">Your Name *</label>
+                        <input type="text" id="customerName" name="customerName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobileNo">Mobile Number *</label>
+                        <input type="tel" id="mobileNo" name="mobileNo" pattern="[0-9]{10}" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address *</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookName">Book Name to Buy *</label>
+                        <input type="text" id="bookName" name="bookName" readonly required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bookPrice">Price</label>
+                        <input type="text" id="bookPrice" name="bookPrice" readonly>
+                    </div>
+
+                    <button type="submit" class="submit-btn">SUBMIT ORDER</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
